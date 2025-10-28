@@ -1,2 +1,2 @@
 # lpython
-python learning from offical website
+learning python
