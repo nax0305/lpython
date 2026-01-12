@@ -41,3 +41,16 @@ y = np.array([11.0, 12.0])
 print(f"numpy 二维数组：{x}")
 print(f"numpy 一维数组：{y}")
 print(f"x 和 y 的广播运算：{x + y}")
+print()
+
+# 访问numpy N维数组，使用数组下标和切片
+x = np.array([[51, 55], [14, 19], [0, 4]])
+print(f"numpy 二维数组：{x}")
+print(f"x[0]：{x[0]}")
+print(f"x[0][1]：{x[0][1]}")
+for row in x:
+    print(f"row：{row}")
+x = x.flatten()
+print(f"x.flatten()：{x}")
+print(f"x[np.array([0, 2, 4])]：{x[np.array([0, 2, 4])]}")
+print(f"x[x>15]：{x[x>15]}")
