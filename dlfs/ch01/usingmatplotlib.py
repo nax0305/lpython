@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-import matplotlib.image as imread
+from matplotlib.image import imread
 
 # 简单地画出sin函数图像
 x = np.arange(0, 6, 0.1)
@@ -19,6 +19,13 @@ plt.legend()
 # plt.show()
 
 # 画出图像
-img = imread("wallhaven.jpg")
+# 注意当前目录和脚本所在目录的区别
+# 当前目录：python执行脚本所在的目录
+# 脚本目录：与python执行目录无关
+import os
+# 这个python 执行时目录
+# path = os.getcwd()
+# print(path)
+img = imread(path + "wallhaven.jpg")
 plt.imshow(img)
 plt.show()
